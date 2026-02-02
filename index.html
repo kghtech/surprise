@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 Years of Love ❤️</title>
+
+    
+
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Animation -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Confetti Container -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Main Content -->
+    <div class="wrapper">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="line-1">Twenty-Four Years</span>
+                    <span class="line-2">of Forever</span>
+                </h1>
+                <p class="hero-date">February 3rd, 2002 — 2026</p>
+                <div class="hero-heart">❤️</div>
+            </div>
+        </section>
+
+        <!-- Scroll Down Indicator -->
+<div class="scroll-indicator" onclick="scrollToNext()">
+    <div>Scroll Down</div>
+    <div class="mouse">
+        <div class="wheel"></div>
+    </div>
+</div>
+
+
+       <!-- Memory Lane -->
+<section class="memory-lane">
+  <h2 class="section-title">A Journey Through Time....</h2>
+
+  <div class="memory-list">
+
+    <div class="memory-card">
+      <img src="images/1.jpeg" alt="">
+    </div>
+
+    <div class="memory-card">
+      <img src="images/2.jpeg" alt="">
+    </div>
+
+    <div class="memory-card">
+      <img src="images/4.jpeg" alt="">
+    </div>
+
+     <div class="memory-card">
+      <img src="images/8.jpeg" alt="">
+    </div>
+
+      <div class="memory-card">
+      <img src="images/9.jpeg" alt="">
+    </div>
+
+      <div class="memory-card">
+      <img src="images/10.jpeg" alt="">
+    </div>
+
+      <div class="memory-card">
+      <img src="images/11.jpeg" alt="">
+    </div>
+
+      <div class="memory-card">
+      <img src="images/12.jpeg" alt="">
+    </div>
+
+    <div class="memory-card">
+      <img src="images/5.jpeg" alt="">
+    </div>
+
+      <div class="memory-card">
+      <img src="images/7.jpeg" alt="">
+    </div>
+
+      <div class="memory-card">
+      <img src="images/13.jpg" alt="">
+    </div>
+
+     <div class="memory-card">
+      <img src="images/14.jpg" alt="">
+    </div>
+
+    <div class="memory-card">
+      <img src="images/6.jpg" alt="">
+    </div>
+
+   
+
+
+
+    
+
+     
+
+
+
+  </div>
+</section>
+
+
+
+
+        <!-- Photo Gallery Section -->
+        <section class="gallery">
+            <h3 class="section-title">Precious Moments</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-photo="1">
+                  <div class="timeline-photo">
+            <img src="images/photo1.jpeg" alt="FROM THEN...">
+            <p class="photo-caption">FROM THEN...</p>
+        </div>
+
+                    
+                </div>
+                <div class="gallery-item" data-photo="2">
+                  <div class="timeline-photo">
+            <img src="images/photo3.jpeg" alt="CELEBRATING TOGETHER">
+            <p class="photo-caption">CELEBRATING TOGETHER</p>
+        </div>
+
+                </div>
+                <div class="gallery-item" data-photo="2">
+                  <div class="timeline-photo">
+            <img src="images/photo2.jpeg" alt="ADVENTURES TOGETHER">
+            <p class="photo-caption">ADVENTURES TOGETHER</p>
+        </div>
+
+        </div>
+                <div class="gallery-item" data-photo="2">
+                  <div class="timeline-photo">
+            <img src="images/photo5.jpeg" alt="CREATING MEMORIES">
+            <p class="photo-caption">CREATING MEMORIES</p>
+        </div>
+
+        </div>
+                <div class="gallery-item" data-photo="2">
+                  <div class="timeline-photo">
+            <img src="images/photo4.jpeg" alt="CHERISHING LOVE">
+            <p class="photo-caption">CHERISHING LOVE</p>
+        </div>
+
+         </div>
+                <div class="gallery-item" data-photo="2">
+                  <div class="timeline-photo">
+            <img src="images/photo6.jpg" alt="THROUGH SEASONS">
+            <p class="photo-caption">THROUGH SEASONS</p>
+        </div>
+                    
+                
+        </section>
+
+
+
+
+
+        <img 
+  src="images/surprise.jpeg" 
+  alt="Surprise"
+  id="surpriseImage"
+  class="surprise-image"
+/>
+
+            <audio id="backgroundMusic" loop>
+       <source src="images/song.mp3" type="audio/mp3">
+   </audio>
+
+        <!-- Interactive Love Letter Section -->
+        <section class="love-letter">
+            <h3 class="section-title">A SPECIAL IMAGE For You</h3>
+            <div class="envelope-container">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <span class="envelope-text">Click to Open</span>
+                    </div>
+                </div>
+                <div class="letter" id="letter">
+                    <div class="letter-content">
+                        <p class="letter-greeting">Dearest Mom & Dad,</p>
+                        <p>Twenty-four years ago, you made a promise to each other. A promise of love, commitment, and togetherness. Today, as I look at both of you, I see that promise fulfilled in every smile, every gesture, and every moment you share.</p>
+                        <p>You've shown me what true love looks like — not perfect, but persistent. Not without challenges, but never without hope. Your love has been the foundation of our family, the shelter in our storms, and the light in our darkest days.</p>
+                        <p>Thank you for teaching me that love isn't just a feeling, it's a choice you make every single day. Thank you for choosing each other, for choosing us, for choosing love.</p>
+                        <p>Here's to 24 beautiful years and to countless more filled with joy, health, and endless love.</p>
+                        <p class="letter-signature">With all my love,<br>Your Child ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surprise Buttons Section -->
+        <section class="surprises">
+            <h3 class="section-title">Special Surprises</h3>
+            <div class="surprise-buttons">
+                <button class="surprise-btn" id="musicBtn">
+                    <span class="btn-icon">🎵</span>
+                    <span class="btn-text">Play Our Song</span>
+                </button>
+                <button class="surprise-btn" id="confettiBtn">
+                    <span class="btn-icon">🎉</span>
+                    <span class="btn-text">Celebrate!</span>
+                </button>
+                <button class="surprise-btn" id="wishBtn">
+                    <span class="btn-icon">✨</span>
+                    <span class="btn-text">Special Request</span>
+                </button>
+               
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <blockquote class="love-quote" id="quoteDisplay">
+                “My Parents know everything… except how the FACEBOOK works....😜.”
+                <footer>(Niche akta paragraph dekhte payoa jabe, ota CHATGPT theke copy mere diyechhi, porar kono dorkar nei!!)"</footer>
+            </blockquote>
+        </section>
+
+        <!-- Final Wishes -->
+        <section class="final-wishes">
+            <div class="wishes-content">
+                <h2 class="wishes-title">Happy 24th Anniversary!</h2>
+                <p class="wishes-text">24 years of togetherness isn’t just a number, it’s a story built from patience, laughter, small disagreements, silent understandings, and endless care. You taught me that love doesn’t always need grand gestures—it lives in everyday sacrifices, late-night worries, shared smiles, and standing by each other no matter what. Through ups and downs, you chose partnership over pride and togetherness over comfort, and that’s the kind of love that lasts. You turned ordinary days into memories and a simple house into a home filled with warmth and security. Watching you both grow together has quietly shaped who I am today. THANKS FOR EVERYTHING <3 😏</p>
+                <div class="wishes-heart">❤️</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for Special Wish -->
+    <div class="modal" id="wishModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <h2 class="modal-title">BOLCHHI JE.....</h2>
+            <p class="modal-text">Ajke Lunch ta Baire Korbo,, hihhi.</p>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
